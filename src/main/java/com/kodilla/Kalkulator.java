@@ -21,4 +21,9 @@ public class Kalkulator {
         double f = a / b;
         System.out.println("Wynik odejmowania to: " + f);
     }
+
+    public void metoda () {
+        double f = a / b;
+        System.out.println("Wynik odejmowania to: " + f);
+    }
 }

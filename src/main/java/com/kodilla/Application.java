@@ -2,9 +2,12 @@ package com.kodilla;
 
 public class Application {
     public static void main (String args []){
-        Kalkulator simpleCalcualtor = new Kalkulator();
+//        Kalkulator simpleCalcualtor = new Kalkulator();
+//
+//        simpleCalcualtor.addition();
+//        simpleCalcualtor.subtraction();
 
-        simpleCalcualtor.addition();
-        simpleCalcualtor.subtraction();
+        Game sipleGame = new Game();
+        sipleGame.Games();
     }
 }
