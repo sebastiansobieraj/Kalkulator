@@ -7,7 +7,7 @@ public class Application {
 //        simpleCalcualtor.addition();
 //        simpleCalcualtor.subtraction();
 
-        Game sipleGame = new Game();
-        sipleGame.Games();
+        Version simpleGame = new Version();
+        simpleGame.selectVersion();
     }
 }

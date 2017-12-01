@@ -19,7 +19,8 @@ public class Game {
     Scanner takeFigure = new Scanner(System.in);
     Scanner newOrEnd = new Scanner(System.in);
 
-    public void Games() {
+    public void games() {
+        Version selectVersion = new Version();
         System.out.println("Rozpoczynam nową grę. \nPodaj swoje imię.");
         name = takeName.nextLine();
         System.out.println("Witaj " + name + ". Podaj liczbę gier.");
@@ -34,7 +35,7 @@ public class Game {
                 System.out.println("Gra zakończona");
                 break;
             } else if (figure.equals("new game")) {
-                Games();
+                games();
             }
             int nubmer = generator.nextInt(3) + 1;
             if (figure.equals("stone")) {
@@ -92,11 +93,13 @@ public class Game {
             System.out.println("\nZwycięzca to: " + name);
         }
         System.out.println("\nJeżeli chcesz rozpocząć nową grę wpisz: new game. " +
-                "\nJeżeli chcesz zamknąć program wpisz: exit");
+                "\nJeżeli chcesz zamknąć program wpisz: exit. \nJeżeli chcesz zmienić wersję wpisz: change version.");
         startOrContinue = newOrEnd.nextLine();
         if (startOrContinue.equals("new game")) {
-            Games();
-        } else if (startOrContinue.equals("exit")) {
+            games();
+        } else if (startOrContinue.equals("change version")) {
+            selectVersion.selectVersion();
+        } else {
             System.out.println("Koniec gry");
         }
     }
